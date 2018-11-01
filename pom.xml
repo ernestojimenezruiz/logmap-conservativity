@@ -1,0 +1,160 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>logmap-conservativity</groupId>
+  <artifactId>logmap-conservativity</artifactId>
+  <version>1.0.0</version>
+  <name>LogMap Conservativity</name>
+  <description>LogMap extension for the Conservativity Principle in Ontology Alignments</description>
+  <url>https://github.com/ernestojimenezruiz/logmap-conservativity</url>
+  <organization>
+  	<name>University of Genova/Oxford</name>
+  </organization>
+  <issueManagement>
+  	<url>https://github.com/ernestojimenezruiz/logmap-conservativity/issues</url>
+  </issueManagement>
+  
+  <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+   </properties>
+   
+   
+    <dependencies>
+  
+	 <dependency>
+		<groupId>com.hermit-reasoner</groupId>
+		<artifactId>org.semanticweb.hermit</artifactId>
+		<version>1.3.8.4</version>
+	 </dependency>
+	 <dependency>
+		<groupId>commons-io</groupId>
+		<artifactId>commons-io</artifactId>
+		<version>2.1</version>
+  	</dependency>
+  	<dependency>
+		<groupId>commons-logging</groupId>
+		<artifactId>commons-logging</artifactId>
+		<version>1.1</version>
+  	</dependency>
+  	<dependency>		
+		<groupId>commons-lang</groupId>
+		<artifactId>commons-lang</artifactId>
+		<version>2.4</version>
+  	</dependency> 
+	 <!-- We use 0.4.2. Latest version 0.4.3 supports OWL API 4 -->
+	<!--dependency>
+		<groupId>org.semanticweb.elk</groupId>
+		<artifactId>elk-owlapi</artifactId>
+		<version>0.4.2</version>
+	</dependency-->
+	<dependency>
+		<groupId>log4j</groupId>
+		<artifactId>log4j</artifactId>
+		<version>1.2.17</version>
+	</dependency>
+	
+	
+	<!-- https://mvnrepository.com/artifact/com.mxgraph/jgraphx
+	Broken dependency
+    <dependency>
+   	 	<groupId>com.mxgraph</groupId>
+    	<artifactId>jgraphx</artifactId>
+    	<version>1.10.4.2</version>
+	</dependency-->
+	
+	<!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+	<dependency>
+	    <groupId>com.google.guava</groupId>
+	    <artifactId>guava</artifactId>
+	    <version>17.0</version>
+	</dependency>
+	
+	
+	<!-- https://mvnrepository.com/artifact/junit/junit -->
+	<dependency>
+	    <groupId>junit</groupId>
+	    <artifactId>junit</artifactId>
+	    <version>4.4</version> 
+	    <scope>test</scope>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/io.gatling.uncommons.maths/uncommons-maths -->
+	<dependency>
+	    <groupId>io.gatling.uncommons.maths</groupId>
+	    <artifactId>uncommons-maths</artifactId>
+	    <version>1.2.3</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.uncommons.watchmaker/watchmaker-framework -->
+	<dependency>
+	    <groupId>org.uncommons.watchmaker</groupId>
+	    <artifactId>watchmaker-framework</artifactId>
+	    <version>0.7.1</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.apache.jena/jena-core -->
+	<dependency>
+	    <groupId>org.apache.jena</groupId>
+	    <artifactId>jena-core</artifactId>
+	    <version>3.0.0</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.apache.jena/jena-iri -->
+	<dependency>
+	    <groupId>org.apache.jena</groupId>
+	    <artifactId>jena-iri</artifactId>
+	    <version>3.0.0</version>
+	</dependency>
+	
+	
+	<!-- LOCAL DEPENDENCIES. Local mvn install required, see java-libs folder -->
+	
+	<!-- Alignment API -->
+    <dependency>
+           <groupId>alignment-api</groupId>
+           <artifactId>align</artifactId>
+           <version>4.1</version>
+    </dependency>
+    <dependency>
+           <groupId>alignment-api</groupId>
+           <artifactId>ontowrap</artifactId>
+           <version>4.1</version>
+    </dependency>
+    <dependency> 
+           <groupId>alignment-api</groupId>
+           <artifactId>procalign</artifactId>
+           <version>4.1</version>
+    </dependency>
+    
+    <dependency>
+           <groupId>it.unical.dlv</groupId>
+           <artifactId>dlv-wrapper</artifactId>
+           <version>4.2</version>
+    </dependency>
+    
+    <!-- Unofficial version for ELK for traces -->
+    <dependency>
+		<groupId>org.semanticweb.elk</groupId>
+		<artifactId>elk-owlapi</artifactId>
+		<version>0.4.0.unofficial</version>
+	</dependency>
+
+    <dependency>
+		<groupId>org.semanticweb.explanation</groupId>
+		<artifactId>explanation</artifactId>
+		<version>3.3.0</version>
+	</dependency>
+
+	<dependency>
+		<groupId>com.mxgraph</groupId>
+		<artifactId>jgraphx</artifactId>
+		<version>1.10.3.1.modified</version>
+	</dependency>
+	<!-- END LOCAL DEPENDENCIES -->
+	
+	
+	
+	
+	
+	</dependencies>
+</project>
