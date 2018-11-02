@@ -8,7 +8,7 @@ This project contains a maven version of the original [LogMap-Conservativity](ht
 ## Use and Installation
 
 * This project can be imported into Eclipse or other environments as a maven project it can be cloned using `git clone https://github.com/ernestojimenezruiz/logmap-conservativity.git`
-* To generate a JAR file using Maven, run `mvn clean install` from the main project folder.
+* To generate a JAR file using Maven, run `mvn clean install` from the cloned project folder.
 * Dependencies:	
 
 	1. Together with the JAR file maven will also generate a folder with the "java-dependencies"
@@ -16,7 +16,7 @@ This project contains a maven version of the original [LogMap-Conservativity](ht
 	3. The "asp" folder contains the logic programs needed by the SCC repair algorithm
 	4. The "resources" folder contains some example ontologies used in the tests
 
-See the [v1.0 release](https://github.com/ernestojimenezruiz/logmap-conservativity/releases/download/v1.0/logmap-conservativity-kr2016-release.zip) as example. `java -jar logmap-conservativity-1.0.0` runs the class _main.MainKR16_.
+Check out the running example in the [v1.0 release](https://github.com/ernestojimenezruiz/logmap-conservativity/releases/download/v1.0/logmap-conservativity-kr2016-release.zip). `java -jar logmap-conservativity-1.0.0` runs the class _main.MainKR16_.
 
 
 ## References
