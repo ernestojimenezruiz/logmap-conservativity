@@ -2,7 +2,7 @@
 
 In order to enable interoperability between ontology-based systems, ontology matching techniques have been proposed. However, when the generated mappings lead to undesired logical consequences, their usefulness may be diminished. Our approach detects and minimizes the violations of the so-called conservativity principle where novel subsumption entailments between named concepts in one of the input ontologies are considered as unwanted. The practical applicability of the proposed approach is experimentally demonstrated on the datasets from the Ontology Alignment Evaluation Initiative.
 
-This project contains a maven version of the original [LogMap-Conservativity](https://github.com/asolimando/logmap-conservativity) codes.
+This project contains a maven version of the original [LogMap-Conservativity](https://github.com/asolimando/logmap-conservativity) codes. LogMap's conservativity codes are currently being used by the [DARE](https://github.com/ernestojimenezruiz/dare-system) (Dialog-based Alignment Repair Engine) system.
 
 ## References
 
@@ -14,4 +14,5 @@ This project contains a maven version of the original [LogMap-Conservativity](ht
 **Limiting Logical Violations in Ontology Alignnment Through Negotiation**. KR 2016: 217-226. ([PDF](http://www.cs.ox.ac.uk/files/8036/kr2016_jimenez-ruiz.pdf)) 
 - [LogMap-matcher](https://github.com/ernestojimenezruiz/logmap-matcher) source codes.
 - Original [LogMap-Conservativity](https://github.com/asolimando/logmap-conservativity) codes.
+- [Dialog-based Alignment Repair Engine](https://github.com/ernestojimenezruiz/dare-system) source codes. 
 
