@@ -18,7 +18,7 @@
  ******************************************************************************/
 package main;
 
-import static org.junit.Assert.fail;
+//import static org.junit.Assert.fail;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -72,16 +72,18 @@ public class MainOWLED15 {
 		
 		OWLOntologyManager managerTmp = OntoUtil.getManager(false), 
 				manager = OntoUtil.getManager(true);
+		
+		String root_path="resources/owled15/";
 
-		String [] ontoPaths = {"owled15/aliceNODISJ.owl", "owled15/bob.owl"};
+		String [] ontoPaths = {root_path+"aliceNODISJ.owl", root_path+"bob.owl"};
 		if(KR)
-			ontoPaths[0] = "owled15/alice.owl";
+			ontoPaths[0] = root_path+"alice.owl";
 		
 		// load the two ontologies (the other only needed for the signature)
 		OWLOntology ontoAlice = OntoUtil.load(ontoPaths[0], true, managerTmp);
 		OWLOntology ontoBob = OntoUtil.load(ontoPaths[1], true, managerTmp);
 
-		String alignPath = "owled15/align" + (KR ? "" : "2") + ".rdf";
+		String alignPath = root_path+"align" + (KR ? "" : "2") + ".rdf";
 		
 		List<OWLOntology> ontos = new ArrayList<>(2);
 		ontos.add(ontoAlice);
@@ -98,7 +100,7 @@ public class MainOWLED15 {
 				masRepairBob.setVerbosity(true);
 			}
 		} catch (OWLOntologyCreationException e) {
-			fail("Exception while creating the \"hidden\" ontology: " + e.getMessage());
+			System.out.println("Exception while creating the \"hidden\" ontology: " + e.getMessage());
 		}
 
 		List<MappingObjectStr> mappings = masRepairAlice.loadMappings(alignPath);

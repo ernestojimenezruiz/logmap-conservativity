@@ -62,14 +62,16 @@ public class MainKR16 {
 		
 		// 2) loading ontologies and alignments
 		OWLOntologyManager manager = OntoUtil.getManager(false);
+		
+		String root_path="resources/owled15/";
 
-		String [] ontoPaths = {"owled15/alice.owl", "owled15/bob.owl"};
+		String [] ontoPaths = {root_path+"alice.owl", root_path+"bob.owl"};
 
 		// load the two ontologies (the other only needed for the signature)
 		OWLOntology ontoAlice = OntoUtil.load(ontoPaths[0], true, manager);
 		OWLOntology ontoBob = OntoUtil.load(ontoPaths[1], true, manager);
 
-		String alignPath = "owled15/align2.rdf";
+		String alignPath = root_path+"align2.rdf";
 		
 		Set<MappingObjectStr> mappings = LogMapWrapper.getMappings(alignPath, 
 				ontoAlice, ontoBob);
