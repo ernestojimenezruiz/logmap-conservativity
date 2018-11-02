@@ -4,6 +4,20 @@ In order to enable interoperability between ontology-based systems, ontology mat
 
 This project contains a maven version of the original [LogMap-Conservativity](https://github.com/asolimando/logmap-conservativity) codes. LogMap's conservativity codes are currently being used by the [DARE](https://github.com/ernestojimenezruiz/dare-system) (Dialog-based Alignment Repair Engine) system.
 
+
+## Use and Installation
+
+- This project can be imported into Eclipse or other enviroments as a maven project.
+- To generate a JAR file using Maven, run `mvn clean install` from the main project folder.
+- Dependencies:
+⋅⋅ * Together with the JAR file maven will also generate a folder with the "java-dependencies"
+⋅⋅ * The "lib" folder is also required. The "timeout" programs should be given **execution permissions**. 
+⋅⋅ * The "asp" folder contains the logic programs needed by the SCC repair algorithm
+⋅⋅ * The "resources" folder contains some example ontologies used in the tests
+
+See the [v1.0 release](https://github.com/ernestojimenezruiz/logmap-conservativity/releases/download/v1.0/logmap-conservativity-kr2016-release.zip) as example. `java -jar logmap-conservativity-1.0.0` runs the class _main.MainKR16_.
+
+
 ## References
 
 - Alessandro Solimando, Ernesto Jiménez-Ruiz, Giovanna Guerrini:
