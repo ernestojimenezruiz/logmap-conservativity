@@ -7,7 +7,7 @@ This project contains a maven version of the original [LogMap-Conservativity](ht
 
 ## Use and Installation
 
-* This project can be imported into Eclipse or other enviroments as a maven project.
+* This project can be imported into Eclipse or other environments as a maven project it can be cloned using `git clone https://github.com/ernestojimenezruiz/logmap-conservativity.git`
 * To generate a JAR file using Maven, run `mvn clean install` from the main project folder.
 * Dependencies:	
 
