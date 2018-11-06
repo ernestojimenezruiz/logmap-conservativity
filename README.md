@@ -8,9 +8,9 @@ This project contains a maven version of the original [LogMap-Conservativity](ht
 ## Use and Installation
 
 * This project can be imported into Eclipse or other environments as a maven project it can be cloned using `git clone https://github.com/ernestojimenezruiz/logmap-conservativity.git`
-* The project depends on some libraries that are not in maven, but they can be locally installed. Execute the 
-[local-maven-install.sh script](https://github.com/ernestojimenezruiz/logmap-conservativity/blob/master/java-libs/local-maven-install.sh) located in the folder "java-libs".
-* Once local dependencieshave been installed, to generate a JAR file using Maven, run `mvn clean install` from the cloned project folder.
+* The project depends on some libraries that are not in maven, but they can be locally installed. Run the 
+[local-maven-install.sh script](https://github.com/ernestojimenezruiz/logmap-conservativity/blob/master/java-libs/local-maven-install.sh) located in the folder "java-libs" or run each `mvn install:install-file` command independently.
+* Once local dependencies have been installed, to generate a JAR file using Maven, run `mvn clean install` from the cloned project folder.
 * Dependencies:	
 
 	1. Together with the JAR file maven will also generate a folder with the "java-dependencies"
