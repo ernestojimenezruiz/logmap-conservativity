@@ -164,7 +164,8 @@
           <archive>
             <manifest>
               <addClasspath>true</addClasspath>
-              <mainClass>main.MainKR16</mainClass>
+              <!--mainClass>main.MainKR16</mainClass-->
+              <mainClass>main.LogMapConservativityMatching</mainClass>              
               <classpathPrefix>java-dependencies/</classpathPrefix>
             </manifest>
           </archive>

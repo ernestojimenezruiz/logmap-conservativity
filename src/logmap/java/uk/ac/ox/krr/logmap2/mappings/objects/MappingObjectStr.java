@@ -139,6 +139,23 @@ public class MappingObjectStr {
 
 	}
 
+	
+	public boolean isClassMapping(){
+		return getTypeOfMapping()==CLASSES;
+	}
+	
+	public boolean isInstanceMapping(){
+		return getTypeOfMapping()==INSTANCES;
+	}
+	
+	public boolean isDataPropertyMapping(){
+		return getTypeOfMapping()==DATAPROPERTIES;
+	}
+	
+	public boolean isObjectPropertyMapping(){
+		return getTypeOfMapping()==OBJECTPROPERTIES;
+	}
+	
 
 
 
