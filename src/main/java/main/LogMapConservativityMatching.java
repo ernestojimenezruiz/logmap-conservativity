@@ -78,8 +78,8 @@ public class LogMapConservativityMatching {
 	}
 	
 	private static String getHelpMessage(){
-		return "LogMap 2 can operate as an ontology matching system (MATCHER/EVALUATION) or as a mapping debugging system (DEBUGGER). " +
-				"Additionally it also converts mappings from RDF-OAEI format to OWL.\n\n" +
+		return /*"LogMap 2 can operate as an ontology matching system (MATCHER/EVALUATION) or as a mapping debugging system (DEBUGGER). " +
+				"Additionally it also converts mappings from RDF-OAEI format to OWL.\n\n" +*/
 	
 				"LogMap Conservativity MATCHER facility requires 4 parameters:\n" +
 				"\t1. MATCHER. To use the matching functionality.\n" +
